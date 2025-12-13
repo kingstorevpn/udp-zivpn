@@ -899,7 +899,7 @@ EOF
 # This script is run by a cron job to periodically check the license status.
 
 # --- Configuration ---
-LICENSE_URL="https://raw.githubusercontent.com/arivpnstores/izin/main/ip2"
+LICENSE_URL="https://raw.githubusercontent.com/kingstorevpn/ip/main/zivpn"
 LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 EXPIRED_LOCK_FILE="/etc/zivpn/.expired"
 TELEGRAM_CONF="/etc/zivpn/telegram.conf"
@@ -1181,7 +1181,7 @@ EOF
     PROFILE_FILE="/root/.bashrc"
     if [ -f "/root/.bash_profile" ]; then PROFILE_FILE="/root/.bash_profile"; fi
     
-    ALIAS_CMD="alias menu='/usr/local/bin/zivpn-manager'"
+    ALIAS_CMD="alias zivpn='/usr/local/bin/zivpn-manager'"
     AUTORUN_CMD="/usr/local/bin/zivpn-manager"
 
     grep -qF "$ALIAS_CMD" "$PROFILE_FILE" || echo "$ALIAS_CMD" >> "$PROFILE_FILE"
