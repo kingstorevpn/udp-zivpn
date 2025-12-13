@@ -12,7 +12,7 @@ LIGHT_GREEN='\033[1;32m'
 NC='\033[0m' # No Color
 
 # --- License Info ---
-LICENSE_URL="https://raw.githubusercontent.com/kingstorevpn/ip/main/ip"
+LICENSE_URL="https://raw.githubusercontent.com/kingstorevpn/ip/main/zivpn"
 LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 
 # --- Pre-flight Checks ---
@@ -695,7 +695,7 @@ function show_menu() {
     fi
 
     clear
-    figlet "UDP ZIVPN" | lolcat
+    figlet "UDP ZIVPN Kingstore" | lolcat
     
     echo -e "${YELLOW}╔═══════════// ${CYAN}PT RAJA SERVER PREMIUM${YELLOW} //═════════════╗${NC}"
     _draw_info_panel
